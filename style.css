@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    height: 100%;
+}
+.main-class {
+  
+    width: 100%;
+    height: 100%;
+}
+.card-component {
+    display: flex;
+    width: 45rem;
+    
+
+}
+.card-component .card-image .product-img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-component .card-text {
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+}
+.card-component .card-text .product-text {
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.card-component .card-text .headline-class {
+    text-transform: capitalize;
+    padding: 1rem;
+}
+.card-component .card-text .about-class {
+    padding: 1rem;
+}
+.card-component .card-text .price-div {
+    padding: 1rem;
+    display: flex;
+}
+.card-component .card-text .price-div .discount-price {
+    padding: 1rem;
+}
+.card-component .card-text .price-div .original-price {
+    padding: 1rem;
+}
+.card-component .card-text .btn {
+    margin: 1rem;
+}
+
+.attribution {
+    
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+#mobile-image {
+    display: none;
+}
