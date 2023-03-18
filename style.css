@@ -39,14 +39,16 @@ body {
 
                 /*** Card Text Stylesheet ***/
 .card-text {
-    max-width: 100%;
+    max-width: 37.6rem;
     background-color: #fff;
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: start;
+    gap: 1rem;
     border-radius: 0 0 20px 20px;
+    padding: 2rem;
     
 }
 
@@ -125,7 +127,7 @@ body {
     }
     .card-component {
         display: flex;
-        max-width: 50%;
+        max-width: 37.5rem;
         height: auto;
         
     }
