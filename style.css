@@ -1,90 +1,142 @@
+
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: inherit;
 }
-
-.main-class { 
-    
-    width: 100vw;
-    height: 100vh;
+html {
+    box-sizing: border-box;
+}
+body {
     background-color: hsl(30, 38%, 92%);
 }
-.card-component {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    width: 43rem;
-    height: 30rem;
-    background-color: white;
-}
-.card-component .card-image .product-img{
-    width: 100%;
-    height: 100%;
-}
 
-.card-component .card-text {
-    padding: 2rem;
-    width: 50%;
-    height: 100%;
-}
-.card-component .card-text .headline-class {
-    font-family: 'Fraunces', serif;
-}
-.card-component .card-text .product-text {
-    text-transform: uppercase;
-    padding: 0 1rem;
-    letter-spacing: 2px;
-    font-size: 14px;
-    color: hsl(228, 12%, 48%);
-}
-.card-component .card-text .headline-class {
-    text-transform: capitalize;
-    padding: 1rem;
-    
-}
-.card-component .card-text .about-class {
-    padding: 1rem;
-    font-size: 14px;
-    color: hsl(228, 12%, 48%);
-}
-.card-component .card-text .price-div {
-    padding: 1rem;
-    display: flex;
-    
-}
-.card-component .card-text .price-div .discount-price {
-    font-size: 2.6rem;
-    color: hsl(158, 36%, 37%);
-    font-family: 'Fraunces', serif;
-}
-.card-component .card-text .price-div .original-price {
-    margin: auto;
-    color: hsl(228, 12%, 48%);
-    text-decoration: line-through;
-    font-size: 12px;
-}
-.card-component .card-text .btn {
-    display: flex;
-    width: 15rem;
-    margin: 1rem;
-    background-color: hsl(158, 36%, 37%);
-    padding: 1rem 4rem ;
-    color: white;
-    font-weight: 700;
-    border-style: none;
-    border-radius: 10px;
-}
-.card-component .card-text .btn p {
-   margin-left: 1rem;
-}
-.attribution {
-
-    font-size: 11px;
-    text-align: center;
-}
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-#mobile-image {
+.desktop-image {
     display: none;
 }
+
+.main-class {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-class .card-component {
+    width: calc(100% - 40%);
+    height: calc(100% - 10%);
+    
+}
+
+                /*** Image Stylesheet ***/
+.main-class .card-component .mobile-image {
+    max-width: 100%;
+    height: auto;
+   
+}
+
+                /*** Card Text Stylesheet ***/
+.main-class .card-component .card-text {
+    max-width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    height: auto;
+}
+
+.main-class .card-component .card-text p:first-child{
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 0.76rem;
+}
+
+.main-class .card-component .card-text h1 {
+    line-height: 1;
+    font-family: 'Fraunces', serif;
+    text-transform: capitalize;
+    
+}
+.main-class .card-component .card-text p {
+    color: hsl(228, 12%, 48%);
+}
+
+.main-class .card-component .card-text .product-info {
+    margin: 1rem auto;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.8;
+}
+.main-class .card-component .card-text .price {
+    display: flex;
+}
+.main-class .card-component .card-text .price .discount-price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+}
+.main-class .card-component .card-text .price .orignal-price {
+    text-decoration: line-through;
+    margin: auto 1rem;
+}
+
+
+
+                /*** BUTTON Stylesheet ***/
+.main-class .card-component .card-text .btn {
+    margin-top: 1rem;
+    display: flex;
+    padding: 1rem 0;
+    color: #fff;
+    background-color: hsl(158, 36%, 37%);
+    border-style: none;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.main-class .card-component .card-text .btn img {
+    margin: auto;
+    margin-right: 1rem;
+}
+.main-class .card-component .card-text .btn p{
+    margin: auto;
+    margin-left: 0;
+    color: #fff;
+}
+.main-class .card-component .card-text .btn:hover {
+    cursor: pointer;
+    background-color: hsl(159, 38%, 23%);
+}
+
+                /*** Media query  ***/
+
+@media screen and (min-width: 800px) {
+    .main-class .card-component .mobile-image {
+        display: none;
+    }
+    .main-class .card-component .desktop-image {
+        display: block;
+        max-width: auto;
+    }
+    .main-class .card-component {
+        display: flex;
+        height: calc(100% - 30%);
+        width: calc(100% - 60%);
+        top: 15%;
+        left: 30%;
+    }
+    .main-class .card-component .card-text {
+        height: auto;
+        max-width: auto;
+    }
+}
+
+
+                /*** Footer Stylesheet ***/
+.main-class .attribution {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+}
+
