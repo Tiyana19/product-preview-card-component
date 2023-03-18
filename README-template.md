@@ -17,8 +17,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Tiyana19/product-preview-card-component)
-- Live Site URL: [Add live site URL here](https://tiyana19.github.io/product-preview-card-component/)
+- Solution URL: [solution URL here](https://github.com/Tiyana19/product-preview-card-component)
+- Live Site URL: [live site URL here](https://tiyana19.github.io/product-preview-card-component/)
 
 ## My process
 
