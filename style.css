@@ -99,7 +99,7 @@ body {
     margin: auto;
     margin-right: 1rem;
 }
-.main-class .card-component .card-text .btn p{
+.main-class .card-component .card-text .btn span{
     margin: auto;
     margin-left: 0;
     color: #fff;
