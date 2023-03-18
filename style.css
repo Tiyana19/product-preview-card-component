@@ -23,60 +23,63 @@ body {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
 }
-.main-class .card-component {
-    width: calc(100% - 40%);
-    height: calc(100% - 10%);
+.card-component {
+    max-width: 50%;
+    height: auto;
     
 }
 
                 /*** Image Stylesheet ***/
-.main-class .card-component .mobile-image {
+.mobile-image {
     max-width: 100%;
     height: auto;
-   
+    display: block;
+    border-radius: 20px 20px 0 0;
 }
 
                 /*** Card Text Stylesheet ***/
-.main-class .card-component .card-text {
+.card-text {
     max-width: 100%;
     background-color: #fff;
-    padding: 2rem;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    border-radius: 0 0 20px 20px;
+    
 }
 
-.main-class .card-component .card-text p:first-child{
+.card-text p:first-child{
     letter-spacing: 0.3rem;
-    margin-bottom: 1rem;
     font-weight: 500;
     font-size: 0.76rem;
 }
 
-.main-class .card-component .card-text h1 {
+.card-text h1 {
     line-height: 1;
     font-family: 'Fraunces', serif;
     text-transform: capitalize;
+   
     
 }
-.main-class .card-component .card-text p {
-    color: hsl(228, 12%, 48%);
-}
 
-.main-class .card-component .card-text .product-info {
-    margin: 1rem auto;
+.card-text .product-info {
     letter-spacing: 0.05rem;
     font-weight: 500;
     font-size: 0.875rem;
     line-height: 1.8;
+   
 }
-.main-class .card-component .card-text .price {
+.card-text .price {
     display: flex;
 }
-.main-class .card-component .card-text .price .discount-price {
+.price .discount-price {
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
     font-size: 2rem;
 }
-.main-class .card-component .card-text .price .orignal-price {
+.price .orignal-price {
     text-decoration: line-through;
     margin: auto 1rem;
 }
@@ -84,8 +87,7 @@ body {
 
 
                 /*** BUTTON Stylesheet ***/
-.main-class .card-component .card-text .btn {
-    margin-top: 1rem;
+.card-text .btn {
     display: flex;
     padding: 1rem 0;
     color: #fff;
@@ -95,16 +97,16 @@ body {
     border-radius: 10px;
     font-weight: 700;
 }
-.main-class .card-component .card-text .btn img {
+.btn img {
     margin: auto;
     margin-right: 1rem;
 }
-.main-class .card-component .card-text .btn span{
+.btn span{
     margin: auto;
     margin-left: 0;
     color: #fff;
 }
-.main-class .card-component .card-text .btn:hover {
+.card-text .btn:hover {
     cursor: pointer;
     background-color: hsl(159, 38%, 23%);
 }
@@ -112,29 +114,32 @@ body {
                 /*** Media query  ***/
 
 @media screen and (min-width: 800px) {
-    .main-class .card-component .mobile-image {
+    .mobile-image {
         display: none;
     }
-    .main-class .card-component .desktop-image {
+    .desktop-image {
         display: block;
-        max-width: auto;
+        max-width: 50%;
+        border-radius: 20px 0 0 20px;
+        
     }
-    .main-class .card-component {
+    .card-component {
         display: flex;
-        height: calc(100% - 30%);
-        width: calc(100% - 60%);
-        top: 15%;
-        left: 30%;
-    }
-    .main-class .card-component .card-text {
+        max-width: 50%;
         height: auto;
-        max-width: auto;
+        
+    }
+    .card-text {
+        border-radius: 0 20px 20px 0;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-around; */
     }
 }
 
 
                 /*** Footer Stylesheet ***/
-.main-class .attribution {
+.attribution {
     font-size: 0.8rem;
     position: absolute;
     bottom: 0;
