@@ -32,7 +32,6 @@ body {
                 /*** Image Stylesheet ***/
 .mobile-image {
     max-width: 100%;
-    height: auto;
     display: block;
     border-radius: 20px 20px 0 0;
 }
@@ -75,9 +74,7 @@ body {
     line-height: 1.8;
    
 }
-.card-text .price {
-    display: flex;
-}
+
 .price .discount-price {
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
@@ -85,8 +82,8 @@ body {
 }
 .price .orignal-price {
     text-decoration: line-through;
-    margin: auto 1rem;
     color: hsl(228, 12%, 48%);
+
 }
 
 
@@ -118,7 +115,7 @@ body {
 
                 /*** Media query  ***/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     .mobile-image {
         display: none;
     }
@@ -139,6 +136,12 @@ body {
         /* display: flex;
         flex-direction: column;
         justify-content: space-around; */
+    }
+    .card-text .price {
+        display: flex;
+    }
+    .price .orignal-price {
+        margin: auto 1rem;
     }
 }
 
